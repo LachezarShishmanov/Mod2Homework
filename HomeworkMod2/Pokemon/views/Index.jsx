@@ -13,7 +13,7 @@ class Index extends React.Component{
                 <h1>Pokemon</h1>
                 <ul>
                    {pokemon.map((pokemon, idx) => (
-                     <li>{capitalizeFirstLetter(pokemon.name)}{" "}<img src={pokemon.img} /></li>
+                     <li><a href={`/pokemon/${idx}`}>{capitalizeFirstLetter(pokemon.name)}</a>{" "}<img src={pokemon.img} /></li>
                    ))} 
                 </ul>
             </div>
