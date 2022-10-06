@@ -14,6 +14,7 @@ class Show extends React.Component{
                 <h1>Gotta Catch 'Em Al</h1>
                 <h2>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h2>
                 <img src={pokemon.img} alt={pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)} />
+                <a href="/pokemon"><button>Home</button></a>
             </div>
         )
     }
