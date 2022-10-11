@@ -11,9 +11,13 @@ class Index extends React.Component{
         return(
             <div>
                 <h1>Pokemon</h1>
+                <nav>
+          <a href="/pokemon/new">Create a New Pokemon</a>
+        </nav>
                 <ul>
                    {pokemon.map((pokemon, idx) => (
                      <li><a href={`/pokemon/${idx}`}>{capitalizeFirstLetter(pokemon.name)}</a>{" "}<img src={pokemon.img} /></li>
+                   
                    ))} 
                 </ul>
             </div>
